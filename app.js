@@ -9,9 +9,7 @@ while (chute != numeroSecreto) {
   // se chute for igual ao número secreto
   if (chute == numeroSecreto) {
     break;
-    alert(
-      `Isso ai! Você descobriu o ${numeroSecreto} com ${tentativas} tentativas.`
-    );
+    
   } else {
     if (chute > numeroSecreto) {
       alert(`o número secreto é menor que ${chute}`);
@@ -21,4 +19,8 @@ while (chute != numeroSecreto) {
     //tentativas = tentativas + 1;
     tentativas++;
   }
+}
+if(tentativas > 1){
+    alert ( `Isso ai! Você descobriu o ${numeroSecreto} com ${tentativas} tentativas.`
+    );
 }
